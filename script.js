@@ -4,30 +4,38 @@ template.innerHTML = `
   .user-card {
 		font-family: 'Arial', sans-serif;
 		background: #f4f4f4;
-		width: 500px;
+		width: 400px;
 		display: grid;
 		grid-template-columns: 1fr 2fr;
 		grid-gap: 10px;
 		margin-bottom: 15px;
-		border-bottom: darkorchid 5px solid;
+    border-radius: 30px;
+		border-bottom: blue 5px solid;
+		border-left: blue 5px solid;
 	}
 
 	.user-card img {
 		width: 100%;
+    border-radius: 50%;
+    padding: 20px;
 	}
 
 	.user-card button {
 		cursor: pointer;
-		background: darkorchid;
+		background: blue;
 		color: #fff;
 		border: 0;
 		border-radius: 5px;
 		padding: 5px 10px;
 	}
+
+  .details {
+    margin-left: 40px;
+  }
   </style>
   <div class="user-card">
     <img />
-    <div>
+    <div class="details">
       <h3></h3>
       <div class="info">
         <p><slot name="email" /></p>
@@ -74,4 +82,4 @@ class UserCard extends HTMLElement {
   }
 }
 
-window.customElements.define('user-card', UserCard);
+window.customElements.define('id-card', UserCard);

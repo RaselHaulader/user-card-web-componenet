@@ -6,15 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>web component</title>
 </head>
+<style>
+  h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  id-card {
+    display: inline-block;
+    margin: 30px;
+  }
+</style>
 <body>
-  <user-card name="John Doe" avatar="https://randomuser.me/api/portraits/men/1.jpg">
-    <div slot="email">johndoe@gmail.com</div>
+  <h1>Practicing Web component</h1>
+  <id-card name="Rasel" avatar="https://randomuser.me/api/portraits/men/2.jpg">
+    <div slot="email">rasel@gmail.com</div>
     <div slot="phone">555-555-5555</div>
-  </user-card>
-  <user-card name="Jane Doe" avatar="https://randomuser.me/api/portraits/women/1.jpg">
-    <div slot="email">janedoe@gmail.com</div>
+  </id-card>
+  <id-card name="Arif" avatar="https://randomuser.me/api/portraits/men/3.jpg">
+    <div slot="email">arif@gmail.com</div>
     <div slot="phone">333-333-3333</div>
-  </user-card>
+  </id-card>
+  <id-card name="Azad" avatar="https://randomuser.me/api/portraits/men/4.jpg">
+    <div slot="email">azad@gmail.com</div>
+    <div slot="phone">444-444-444</div>
+  </id-card>
+  <id-card name="raju" avatar="https://randomuser.me/api/portraits/men/5.jpg">
+    <div slot="email">raju@gmail.com</div>
+    <div slot="phone">222-333-3333</div>
+  </id-card>
+  <id-card name="Peu " avatar="https://randomuser.me/api/portraits/men/2.jpg">
+    <div slot="email">peu@gmail.com</div>
+    <div slot="phone">111-333-3333</div>
+  </id-card>
+  <id-card name="Razia" avatar="https://randomuser.me/api/portraits/women/3.jpg">
+    <div slot="email">rajia@gmail.com</div>
+    <div slot="phone">888-333-3333</div>
+  </id-card>
 
   <script src="./script.js"></script>
 </body>
